@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0 auto;
+    font-family: Karla;
+  }
+  
+  .main-container {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  /* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+     /*height: 300px; Should be removed. Only for demonstration */
+  }
+  /* Clear floats after the columns this is the clearfix hack */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: 20px;
+    margin-bottom:20px;
+  }
+
+  /* stretch images inside columns to fit 100% of the 50% of the 80% width... */
+  .column > img {
+      width:100%;
+      height: auto;
+
+  }
+/* throwing this hack in the stylesheet to use whenever necessary... */
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("spam-header.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline;
+  font-family: georgia;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+nav {
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom:10px;
+    background-color: blue;
+
+}
+nav a {
+color: white;
+
+}
+nav a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+footer {
+text-align: center;
+padding-top: 15px;
+padding-bottom: 15px;
+background-color: #ccc;
+}
+
+h1 {
+    font-family: montserrat;
+}
+h2 {
+    font-family: montserrat;
+}
